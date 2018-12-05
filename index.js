@@ -21,20 +21,40 @@
 // robot.moveMouseSmooth(1800, 400);
 
 //WALLPAPER AXIOS AND DOWNLOAD FILE
-const wallpaper = require('wallpaper');
-var download = require('download-file');
-var axios = require('axios');
+// const wallpaper = require('wallpaper');
+// var download = require('download-file');
+// var axios = require('axios');
 
-var options = {
-    directory: "./",
-    filename: ""
-}
+// var options = {
+//     directory: "./",
+//     filename: ""
+// }
 
-axios.get("https://dog.ceo/api/breeds/image/random").then(function(data) {
-    var image = data.data.message;
-    download(image, options, function(err){
-        if (err) throw err
-        wallpaper.set(options.filename);
-    });
-});
+// axios.get("https://dog.ceo/api/breeds/image/random").then(function(data) {
+//     var image = data.data.message;
+//     download(image, options, function(err){
+//         if (err) throw err
+//         wallpaper.set(options.filename);
+//     });
+// });
+
+
+
+//CATFACTS PDF
+// const catFacts = require('cat-facts');
+// let randomFact = catFacts.random();
+
+// //initialize variables
+// var PDFDocument, doc;
+// var fs = require('fs');
+
+// PDFDocument = require('pdfkit');
+// //create new instance of PDFDocument class
+// doc = new PDFDocument;
+// //create document
+// doc.pipe(fs.createWriteStream('output.pdf'));
+// doc.text(randomFact);
+// doc.end();
+
+
     
